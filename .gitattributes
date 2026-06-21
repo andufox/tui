@@ -1,0 +1,25 @@
+# Enforce consistent line endings for text files
+* text=auto
+
+# JSON and YAML should use normalized line endings
+*.json text
+*.yml text
+*.yaml text
+*.md text
+
+# Keep binary files unchanged
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary

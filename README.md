@@ -22,5 +22,5 @@ import { Button } from "@/components/ui/button"
 
 
 ## GitHub Action
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.1.1
+git push origin v0.1.1
