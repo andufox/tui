@@ -19,3 +19,8 @@ To use the components in your app, import them as follows:
 ```tsx
 import { Button } from "@/components/ui/button"
 ```
+
+
+## GitHub Action
+git tag v0.1.0
+git push origin v0.1.0
