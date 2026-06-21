@@ -73,13 +73,11 @@ jobs:
 
       - name: Release summary
         if: steps.tauri.outputs.releaseHtmlUrl != ''
-        shell: bash
         run: |
-          {
-            echo "## Tauri Release"
-            echo ""
-            echo "- Platform: \`${{ matrix.name }}\`"
-            echo "- Version: \`${{ steps.tauri.outputs.appVersion }}\`"
-            echo "- Release: ${{ steps.tauri.outputs.releaseHtmlUrl }}"
-            echo "- Artifacts: \`${{ steps.tauri.outputs.artifactPaths }}\`"
-          } >> "$GITHUB_STEP_SUMMARY"
+          echo "## Tauri Release" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Platform: \`${{ matrix.name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Version: \`${{ steps.tauri.outputs.appVersion }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Release: ${{ steps.tauri.outputs.releaseHtmlUrl }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Artifacts: \`${{ steps.tauri.outputs.artifactPaths }}\`" >> $GITHUB_STEP_SUMMARY
+
